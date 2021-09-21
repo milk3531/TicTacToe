@@ -1,8 +1,9 @@
 
+
 // Gameboard will be a module because we only need one gameboard
 const Gameboard = (() => {
     const gameboard =
-        ['X', 'O', 'O',
+           ['X', 'O', 'O',
             'X', 'X', 'O',
             'O', 'X', 'X']; // This would be an empty board
     // Render this onto the website with html
@@ -22,5 +23,9 @@ const displayController = () => {
 }
 
 function displayBoard() {
-    // Maybe here receive from Gameboard and display the moves?
+    // Render the tic tac toe board
+    const board = document.getElementsByClassName('grid-container');
+    const tic_box = document.createElement('div'); 
+    // Now append the tic_box to board
+
 }
