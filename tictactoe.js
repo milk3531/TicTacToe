@@ -3,7 +3,7 @@
 // Gameboard will be a module because we only need one gameboard
 const Gameboard = (() => {
     const gameboard =
-            ['X', 'O', 'O',
+           ['X', 'O', 'O',
             'X', 'X', 'O',
             'O', 'X', 'X']; // This would be an empty board
     // Render this onto the website with html
@@ -28,13 +28,15 @@ function displayBoard() {
     for (let i = 0; i < 3; i++) {
         // Create a horizontal row of tic tac toe board
         const box_row = document.createElement('div');
-        box_row.textContent = 'row';
         board.appendChild(box_row);
+        box_row.textContent = 'row';
+        box_row.style.border = 'solid black';
         for (let i = 0; i < 2; i++) {
             // Create a column of tic tac toe board
             const box_column = document.createElement('div');
+            board.appendChild(box_column);
             box_column.textContent = 'column';
-            box_row.appendChild(box_column);
+            box_column.style.border = 'solid black';
         }
         
     } 
