@@ -30,14 +30,14 @@ function displayBoard() {
         const box_row = document.createElement('div');
         board.appendChild(box_row);
         box_row.textContent = 'row';
-        box_row.style.border = 'solid black';
+        box_row.style.border = 'thin solid black';
     }
     for (let i = 0; i < 6; i++) {
         // Create a column of tic tac toe board
         const box_column = document.createElement('div');
         board.appendChild(box_column);
         box_column.textContent = 'column';
-        box_column.style.border = 'solid black';
+        box_column.style.border = 'thin solid black';
     }
 
 
