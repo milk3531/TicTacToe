@@ -3,7 +3,7 @@
 // Gameboard will be a module because we only need one gameboard
 const Gameboard = (() => {
     const gameboard =
-        ['X', 'O', 'O',
+            ['X', 'O', 'O',
             'X', 'X', 'O',
             'O', 'X', 'X']; // This would be an empty board
     // Render this onto the website with html
@@ -19,8 +19,10 @@ const Player = () => {
 
 // Not sure what this is for yet, but I assume we'll just need one controller for the one board and 2 players
 const displayController = () => {
+    // Upon click, launch event listener for changing textContent of this.board
 
 }
+// Build the functions that allow players to click a div and mark as either 'X' or 'O'
 
 function displayBoard() {
     // Render the tic tac toe board
@@ -31,6 +33,9 @@ function displayBoard() {
         board.appendChild(box_row);
         box_row.textContent = 'row';
         box_row.style.border = 'thin solid black';
+        box_row.style.textAlign = 'center'
+        box_row.style.lineHeight = '185px';
+        
     }
     for (let i = 0; i < 6; i++) {
         // Create a column of tic tac toe board
@@ -38,8 +43,12 @@ function displayBoard() {
         board.appendChild(box_column);
         box_column.textContent = 'column';
         box_column.style.border = 'thin solid black';
+        box_column.style.textAlign = 'center';
+        box_column.style.lineHeight = '185px';
+        
     }
-
-
 }
+
+
+
 displayBoard();
