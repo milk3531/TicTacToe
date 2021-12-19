@@ -35,6 +35,9 @@ function displayBoard() {
         box_row.style.border = 'thin solid black';
         box_row.style.textAlign = 'center'
         box_row.style.lineHeight = '185px';
+        box_row.addEventListener('click',function(){
+            box_row.textContent = 'x';
+        })
         
     }
     for (let i = 0; i < 6; i++) {
@@ -45,6 +48,11 @@ function displayBoard() {
         box_column.style.border = 'thin solid black';
         box_column.style.textAlign = 'center';
         box_column.style.lineHeight = '185px';
+        box_column.addEventListener('click',function(){
+            box_column.textContent = 'o'
+        })
+        // So far div changes text arbitrarily.Logic needed for deciding how to swap between
+        // x and o
         
     }
 }
