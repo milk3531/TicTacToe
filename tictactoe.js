@@ -1,5 +1,5 @@
 
-
+current = 'o';
 // Gameboard will be a module because we only need one gameboard
 const Gameboard = (() => {
     const gameboard =
@@ -18,15 +18,21 @@ const Player = () => {
 }
 
 // Not sure what this is for yet, but I assume we'll just need one controller for the one board and 2 players
-const displayController = () => {
-    // Upon click, launch event listener for changing textContent of this.board
-
+function displayController(){
+    // Method for alternating between 'o' and 'x' 
+    if (current === 'o') {
+        current = 'x';
+    } else {
+        current = 'o';
+    }
+    return current;
 }
 // Build the functions that allow players to click a div and mark as either 'X' or 'O'
 
 function displayBoard() {
     // Render the tic tac toe board
     const board = document.getElementsByClassName('grid-container')[0];
+    
     for (let i = 0; i < 3; i++) {
         // Create a horizontal row of tic tac toe board
         const box_row = document.createElement('div');
@@ -36,7 +42,7 @@ function displayBoard() {
         box_row.style.textAlign = 'center'
         box_row.style.lineHeight = '185px';
         box_row.addEventListener('click',function(){
-            box_row.textContent = 'x';
+            box_row.textContent =  displayController();
         })
         
     }
@@ -49,7 +55,7 @@ function displayBoard() {
         box_column.style.textAlign = 'center';
         box_column.style.lineHeight = '185px';
         box_column.addEventListener('click',function(){
-            box_column.textContent = 'o'
+            box_column.textContent = displayController();
         })
         // So far div changes text arbitrarily.Logic needed for deciding how to swap between
         // x and o
