@@ -21,11 +21,13 @@ const Player = () => {
 }
 // 8 Ways a player can win
 function gameStatus(){
-    x_win_1 = ['x','x','x',
-               '','','',
-               '','',''];
-    x_win_2 = ['','','',]
+   
     // How to check whether 3 in a row?
+    // 1. Need to keep track of which div was pressed: add the index item into a
+    // pre-allocated space on the gameStatus array
+    // 2. If it is one of the 8 cases possible for getting 3 in a row, then end game
+    // 1st row, 2nd row, 3rd row, 1st col, 2nd col, 3rd col, left-right diagonal, right-left diagonal
+    // 
 }
 
 // Not sure what this is for yet, but I assume we'll just need one controller for the one board and 2 players
@@ -37,6 +39,7 @@ function displayController(){
         current = 'o';
     }
     return current;
+    // Should also check if just empty as undefined
 }
 // Build the functions that allow players to click a div and mark as either 'X' or 'O'
 
@@ -55,6 +58,8 @@ function displayBoard() {
         box_row.addEventListener('click',function(){
             box_row.textContent =  displayController();
         })
+        // Add everything into lists, and then get the index afterwards
+        // How to make sure it only runs after everything loaded?
         
     }
     for (let i = 0; i < 6; i++) {
@@ -68,8 +73,6 @@ function displayBoard() {
         box_column.addEventListener('click',function(){
             box_column.textContent = displayController();
         })
-        // So far div changes text arbitrarily.Logic needed for deciding how to swap between
-        // x and o
         
     }
 }
