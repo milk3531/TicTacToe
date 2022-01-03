@@ -1,7 +1,12 @@
-.grid-container{
-    height: 90vh;
-    margin: 2rem;
+.button {
+    background-color:paleturquoise;
+    min-width: 200px;
+    min-height: 100px;
+
+}
+
+.wrapper {
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 250px);
+      
 }
