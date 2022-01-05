@@ -12,13 +12,11 @@ function clickbutton(id) {
         }
         getWinnerX();
         getWinnerO();
+        getTie();
     }
 
 }
 
-function getGameStatus() {
-
-}
 
 function getWinnerX() {
     if (document.getElementsByClassName('wrapper')[0].children[0].textContent === 'x' &&
@@ -126,7 +124,7 @@ function getWinnerO() {
         document.getElementsByClassName('wrapper')[0].children[4].textContent === 'o' &&
         document.getElementsByClassName('wrapper')[0].children[7].textContent === 'o') {
         console.log('O won');
-         reset();
+        reset();
     }
 
     if (document.getElementsByClassName('wrapper')[0].children[2].textContent === 'o' &&
@@ -138,8 +136,15 @@ function getWinnerO() {
 }
 
 function getTie() {
-    if (document.getElementsByClassName('wrapper')[0].children[0, 1, 2, 3, 4, 5, 6, 7, 8].textContent !== ' ') {
-        console.log('Game is a tie');
+    let curnum = 0;
+    for (let i = 0; i < 9; i++) {
+        if (document.getElementsByClassName('wrapper')[0].children[i].textContent !== ' ') {
+            curnum++;
+        }
+    }
+    if (curnum === 9) {
+        console.log('Game is  tie');
+        reset();
     }
 }
 
