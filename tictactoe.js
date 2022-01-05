@@ -22,56 +22,56 @@ function getWinnerX() {
     if (document.getElementsByClassName('wrapper')[0].children[0].textContent === 'x' &&
         document.getElementsByClassName('wrapper')[0].children[1].textContent === 'x' &&
         document.getElementsByClassName('wrapper')[0].children[2].textContent === 'x') {
-        console.log('X won');
+        alert('X won');
         reset();
     }
 
     if (document.getElementsByClassName('wrapper')[0].children[3].textContent === 'x' &&
         document.getElementsByClassName('wrapper')[0].children[4].textContent === 'x' &&
         document.getElementsByClassName('wrapper')[0].children[5].textContent === 'x') {
-        console.log('X won');
+        alert('X won');
         reset();
     }
 
     if (document.getElementsByClassName('wrapper')[0].children[6].textContent === 'x' &&
         document.getElementsByClassName('wrapper')[0].children[7].textContent === 'x' &&
         document.getElementsByClassName('wrapper')[0].children[8].textContent === 'x') {
-        console.log('X won');
+        alert('X won');
         reset();
     }
 
     if (document.getElementsByClassName('wrapper')[0].children[0].textContent === 'x' &&
         document.getElementsByClassName('wrapper')[0].children[4].textContent === 'x' &&
         document.getElementsByClassName('wrapper')[0].children[8].textContent === 'x') {
-        console.log('X won');
+        alert('X won');
         reset();
     }
 
     if (document.getElementsByClassName('wrapper')[0].children[2].textContent === 'x' &&
         document.getElementsByClassName('wrapper')[0].children[4].textContent === 'x' &&
         document.getElementsByClassName('wrapper')[0].children[6].textContent === 'x') {
-        console.log('X won');
+        alert('X won');
         reset();
     }
 
     if (document.getElementsByClassName('wrapper')[0].children[0].textContent === 'x' &&
         document.getElementsByClassName('wrapper')[0].children[3].textContent === 'x' &&
         document.getElementsByClassName('wrapper')[0].children[6].textContent === 'x') {
-        console.log('X won');
+        alert('X won');
         reset();
     }
 
     if (document.getElementsByClassName('wrapper')[0].children[1].textContent === 'x' &&
         document.getElementsByClassName('wrapper')[0].children[4].textContent === 'x' &&
         document.getElementsByClassName('wrapper')[0].children[7].textContent === 'x') {
-        console.log('X won');
+        alert('X won');
         reset();
     }
 
     if (document.getElementsByClassName('wrapper')[0].children[2].textContent === 'x' &&
         document.getElementsByClassName('wrapper')[0].children[5].textContent === 'x' &&
         document.getElementsByClassName('wrapper')[0].children[8].textContent === 'x') {
-        console.log('X won');
+        alert('X won');
         reset();
     }
 
@@ -81,56 +81,56 @@ function getWinnerO() {
     if (document.getElementsByClassName('wrapper')[0].children[0].textContent === 'o' &&
         document.getElementsByClassName('wrapper')[0].children[1].textContent === 'o' &&
         document.getElementsByClassName('wrapper')[0].children[2].textContent === 'o') {
-        console.log('O won');
+        alert('O won');
         reset();
     }
 
     if (document.getElementsByClassName('wrapper')[0].children[3].textContent === 'o' &&
         document.getElementsByClassName('wrapper')[0].children[4].textContent === 'o' &&
         document.getElementsByClassName('wrapper')[0].children[5].textContent === 'o') {
-        console.log('O won');
+        alert('O won');
         reset();
     }
 
     if (document.getElementsByClassName('wrapper')[0].children[6].textContent === 'o' &&
         document.getElementsByClassName('wrapper')[0].children[7].textContent === 'o' &&
         document.getElementsByClassName('wrapper')[0].children[8].textContent === 'o') {
-        console.log('O won');
+        alert('O won');
         reset();
     }
 
     if (document.getElementsByClassName('wrapper')[0].children[0].textContent === 'o' &&
         document.getElementsByClassName('wrapper')[0].children[4].textContent === 'o' &&
         document.getElementsByClassName('wrapper')[0].children[8].textContent === 'o') {
-        console.log('O won');
+        alert('O won');
         reset();
     }
 
     if (document.getElementsByClassName('wrapper')[0].children[2].textContent === 'o' &&
         document.getElementsByClassName('wrapper')[0].children[4].textContent === 'o' &&
         document.getElementsByClassName('wrapper')[0].children[6].textContent === 'o') {
-        console.log('O won');
+        alert('O won');
         reset();
     }
 
     if (document.getElementsByClassName('wrapper')[0].children[0].textContent === 'o' &&
         document.getElementsByClassName('wrapper')[0].children[3].textContent === 'o' &&
         document.getElementsByClassName('wrapper')[0].children[6].textContent === 'o') {
-        console.log('O won');
+        alert('O won');
         reset();
     }
 
     if (document.getElementsByClassName('wrapper')[0].children[1].textContent === 'o' &&
         document.getElementsByClassName('wrapper')[0].children[4].textContent === 'o' &&
         document.getElementsByClassName('wrapper')[0].children[7].textContent === 'o') {
-        console.log('O won');
+        alert('O won');
         reset();
     }
 
     if (document.getElementsByClassName('wrapper')[0].children[2].textContent === 'o' &&
         document.getElementsByClassName('wrapper')[0].children[5].textContent === 'o' &&
         document.getElementsByClassName('wrapper')[0].children[8].textContent === 'o') {
-        console.log('O won');
+        alert('O won');
         reset();
     }
 }
@@ -143,7 +143,7 @@ function getTie() {
         }
     }
     if (curnum === 9) {
-        console.log('Game is  tie');
+        alert('Game is a tie');
         reset();
     }
 }
